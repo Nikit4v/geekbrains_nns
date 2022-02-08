@@ -5,11 +5,6 @@ import tqdm
 from numpy import ndarray
 
 
-from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_digits
-from sklearn.preprocessing import MinMaxScaler
-
-
 class Function(abc.ABC):
     @abc.abstractmethod
     def __call__(self, x: ndarray) -> ndarray:
